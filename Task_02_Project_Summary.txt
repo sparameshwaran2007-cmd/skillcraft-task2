@@ -1,0 +1,30 @@
+TASK 02 – DATA CLEANING AND PREPARATION
+SkillCraft Technology Internship
+
+Source file: train.csv
+Initial records: 9,800
+Records after cleaning: 9,800
+Exact duplicate rows removed: 0
+Original columns: 18
+Output columns including date features: 22
+
+CLEANING ACTIONS
+1. Inspected structure, data types, missing values and duplicates.
+2. Checked and removed exact duplicate rows (none were present).
+3. Trimmed leading/trailing whitespace from text fields.
+4. Parsed Order Date and Ship Date using DD/MM/YYYY format.
+5. Converted Sales to numeric.
+6. Converted Postal Code to nullable integer.
+7. Added Order Year, Order Month, Order Month Name and Year-Month.
+8. Exported the cleaned dataset as CSV.
+
+VALIDATION
+Remaining exact duplicates: 0
+Invalid/missing Order Date after parsing: 0
+Invalid/missing Ship Date after parsing: 0
+Missing Postal Code: 11
+Sales total before: 2,261,536.78
+Sales total after: 2,261,536.78
+
+DATA QUALITY NOTE
+Missing Postal Code values were retained as null; they were not guessed or fabricated.
